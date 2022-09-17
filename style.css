@@ -13,8 +13,6 @@ section {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url(images/espaço-preto.jpg);
-    background-size: cover;
     background-position: right;
     padding: 100px;
     display: flex;
