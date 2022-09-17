@@ -9,28 +9,28 @@ section {
     padding: 100px;
 }
 
-.containerproje .slide-container .slide {
+.banner {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 20px 9%;
-    padding-bottom: 70px;
+    background: url(images/espaço-preto.jpg);
+    background-size: cover;
+    background-position: right;
+    padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: red;
+    color: white;
 }
 
-.contentproje h2 {
+.banner h2 {
     font-size: 3em;
     color: #fff;
     font-weight: 500;
     line-height: 1.5em;
 }
 
-.contentproje h2 span {
+.banner h2 span {
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -61,9 +61,6 @@ section {
     border: 1px solid rgb(0, 255, 200);
     color: black;
 }
-
-
-
 
 header {
     position: fixed;
