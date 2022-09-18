@@ -20,35 +20,78 @@
             <li><a href="#">Contato</a></li>
         </ul>
     </header>
-    <section class="banner">
-        <div class="content">
-            <div class="textbox">
-                <h2>Lorem ipsum dolor sit <br> amet <span> consectetur adipisicing </span> </h2>
-                <h3>Im Front end Web Developer.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officia sequi magnam.</p>
-                <a href="#" class="btn">Saiba Mais</a>
+
+
+    <section class="containerproje">
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="contentproje">
+                    <h3>Metaverso</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id ratione odit</p>
+                    <a href="#" class="btnproj">Saiba Mais</a>
+                </div>
             </div>
         </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="contentproje">
+                    <h3>Mettttt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id ratione odit</p>
+                    <a href="#" class="btnproj">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="contentproje">
+                    <h3>Metaaaaverso</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id ratione odit</p>
+                    <a href="#" class="btnproj">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="contentproje">
+                    <h3>Metaverso</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id ratione odit</p>
+                    <a href="#" class="btnproj">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="prev" onclick="prev()">
+            < </div>
+                <div id="next" onclick="next()"> > </div>
     </section>
-    
+
+
+
     <section class="about">
         <div class="heading">
             <h2>Sobre Nós</h2>
-        <div class="content">
-            <div class="contentBx w50">
-                <h3>Im Front end Web Developer.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, commodi incidunt ut <br>possimus libero
-                    illo eaque eum amet nemo optio velit est nobis temporibus neque, id et ipsam non doloremque. Lorem
-                    ipsum, dolor sit amet consectetur adipisicing elit. <br><br> Voluptas, voluptates voluptate?
-                    Praesentium
-                    odio, suscipit, ex accusamus, aliquid sit fugiat placeat omnis nam nisi ipsam. Obcaecati beatae nisi
-                    veritatis reiciendis esse!</p>
+            <div class="content">
+                <div class="contentBx w50">
+                    <h3>Im Front end Web Developer.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, commodi incidunt ut <br>possimus
+                        libero
+                        illo eaque eum amet nemo optio velit est nobis temporibus neque, id et ipsam non doloremque.
+                        Lorem
+                        ipsum, dolor sit amet consectetur adipisicing elit. <br><br> Voluptas, voluptates voluptate?
+                        Praesentium
+                        odio, suscipit, ex accusamus, aliquid sit fugiat placeat omnis nam nisi ipsam. Obcaecati beatae
+                        nisi
+                        veritatis reiciendis esse!</p>
+                </div>
+                <div class="w50">
+                    <img src="images/pc.jpg" alt="" height="400px">
+                    <figcaption>Setup de Computador!</figcaption>
+                </div>
             </div>
-            <div class="w50">
-                <img src="images/pc.jpg" alt="" height="400px">
-                <figcaption>Setup de Computador!</figcaption>
-            </div>
-        </div>
     </section>
     <section class="services">
         <div class="heading">
@@ -68,12 +111,7 @@
 
         </div>
     </section>
-    <script type="text/javascript">
-        window.addEventListener('scroll', function () {
-            var header = document.querySelector('header');
-            header.classList.toggle('sticky', window.scrollY > 0);
-        });
-    </script>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
