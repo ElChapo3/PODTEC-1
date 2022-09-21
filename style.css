@@ -47,7 +47,7 @@ header.sticky .logo {
 }
 
 header.sticky ul li a {
-    color: black;
+    color: rgb(0, 217, 255);
 }
 
 header ul {
@@ -246,6 +246,9 @@ header ul li a {
 
 .containerproje {
     position: relative;
+    top: 0px;
+    height: 100px;
+    background-color: #2F4F4F;
 }
 
 .containerproje .slide-container .slide {
@@ -354,7 +357,7 @@ header ul li a {
 .containerproje #prev,
 .containerproje #next {
     position: absolute;
-    top: 50%;
+    top: 200%;
     transform: translateY(-50%);
     color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);

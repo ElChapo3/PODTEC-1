@@ -4,10 +4,11 @@ window.addEventListener('scroll', function () {
     header.classList.toggle('sticky', window.scrollY > 0);
 });
 
+//CARROUSSEL
+
 let slides = document.querySelectorAll('.slide-container');
 let index = 0;
 
-//CARROUSSEL
 function next() {
     slides[index].classList.remove('active');
     index = (index + 1) % slides.length;
