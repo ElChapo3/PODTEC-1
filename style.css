@@ -112,7 +112,7 @@ header ul li a {
 }
 
 .home .content h1 span {
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: 600;
 }
 
@@ -241,6 +241,7 @@ header ul li a {
 
 .contentBx {
     padding-right: 30px;
+    color: #000000;
 }
 
 .contentBx h3 {
@@ -281,6 +282,10 @@ header ul li a {
 
 .containerproje .slide-container .slide .contentproje h3 {
     font-size: 35px;
+    border-radius: 10px 1px;
+    background-color: black;
+    backdrop-filter: blur(20px);
+    width: 750px;
     color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -322,16 +327,6 @@ header ul li a {
 }
 
 .slide-container:nth-child(1) .slide {
-    background: url(images/espaço-preto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 98.5vw;
-    position: relative;
-    right: 100px;
-}
-
-.slide-container:nth-child(2) .slide {
     background: url(images/iphone.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -341,8 +336,18 @@ header ul li a {
     right: 100px;
 }
 
+.slide-container:nth-child(2) .slide {
+    background: url(images/metaverso.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 98.5vw;
+    position: relative;
+    right: 100px;
+}
+
 .slide-container:nth-child(3) .slide {
-    background: url(images/pc.jpg);
+    background: url(images/spacex.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
