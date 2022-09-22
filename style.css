@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -112,7 +114,7 @@ header ul li a {
 }
 
 .home .content h1 span {
-    font-size: 1.0em;
+    font-size: 1.2em;
     font-weight: 600;
 }
 
@@ -218,7 +220,7 @@ header ul li a {
 /* =============HEADING============= */
 
 .about {
-    background-image: url(images/fundo.jpg);
+    background: linear-gradient(#0B3C5D,#18121E);
 }
 
 .heading {
@@ -241,7 +243,6 @@ header ul li a {
 
 .contentBx {
     padding-right: 30px;
-    color: #000000;
 }
 
 .contentBx h3 {
@@ -282,10 +283,6 @@ header ul li a {
 
 .containerproje .slide-container .slide .contentproje h3 {
     font-size: 35px;
-    border-radius: 10px 1px;
-    background-color: black;
-    backdrop-filter: blur(20px);
-    width: 750px;
     color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -327,7 +324,7 @@ header ul li a {
 }
 
 .slide-container:nth-child(1) .slide {
-    background: url(images/iphone.jpg);
+    background: url(images/espaço-preto.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -337,7 +334,7 @@ header ul li a {
 }
 
 .slide-container:nth-child(2) .slide {
-    background: url(images/metaverso.png);
+    background: url(images/iphone.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -347,7 +344,7 @@ header ul li a {
 }
 
 .slide-container:nth-child(3) .slide {
-    background: url(images/spacex.jpg);
+    background: url(Imagens/pc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -396,3 +393,38 @@ header ul li a {
 .containerproje #next {
     right: 20px;
 }
+
+.footer-container
+{
+    font-size:medium;
+    
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 350%;
+    position: relative;
+    top: 400px;
+}
+
+.footer-container img
+{
+
+position:relative ;
+left: 30px;
+top: 40px;
+
+}
+
+.about-group
+{
+    position: relative;
+    top: 30px;
+    left:500px;
+    
+}
+
+.info-group 
+{
+position: relative;
+top: 80px;
+}
+
