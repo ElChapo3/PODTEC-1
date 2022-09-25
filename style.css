@@ -35,10 +35,8 @@ header.sticky {
 
 header .logo {
     color: black;
-    font-size: 24px;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: 700;
     letter-spacing: 2px;
 }
 
@@ -217,10 +215,6 @@ header ul li a {
 
 /* =============HEADING============= */
 
-.about {
-    background-image: url(images/fundo.jpg);
-}
-
 .heading {
     width: 100%;
     text-align: center;
@@ -236,7 +230,7 @@ header ul li a {
 .content {
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .contentBx {
@@ -248,13 +242,11 @@ header ul li a {
     margin-bottom: 5px;
 }
 
+
 /* =============CARROUSSEL============= */
 
 .containerproje {
     position: relative;
-    top: 0px;
-    height: 100px;
-    background-color: black;
 }
 
 .containerproje .slide-container .slide {
@@ -279,37 +271,34 @@ header ul li a {
     }
 }
 
+
 .containerproje .slide-container .slide .contentproje h3 {
     font-size: 35px;
-    color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
 }
 
 .containerproje .slide-container .slide .contentproje p {
     font-size: 16px;
-    color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
     width: 40%;
     height: 10%;
+
 }
 
-.containerproje .slide-container .slide .contentproje .btnproj {
+.containerproje .slide-container .slide .contentproje .bntproj {
     margin-top: 10px;
     display: inline-block;
-    background-color: white;
-    color: black;
+    background: #ffffff;
+    color: #000000;
     font-size: 17px;
     padding: 9px 40px;
-    border-radius: 2px;
-    border: 2px solid rgb(0, 0, 0);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
     text-decoration: none;
 }
 
-.containerproje .slide-container .slide .contentproje .btnproj:hover {
-    background: black;
-    border: 2px solid black;
-    color: rgb(255, 255, 255);
+.containerproje .slide-container .slide .contentproje .bntproj:hover {
+    background: #000000;
+    color: #ffffff;
     box-shadow: 0 0 50px white;
 }
 
@@ -321,53 +310,68 @@ header ul li a {
     display: block;
 }
 
-.slide-container:nth-child(1) .slide {
-    background: url(images/espaço-preto.jpg);
+.containerproje .slide-container:nth-child(1) .slide {
+    background: url(images/iphone13.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 98.5vw;
+    width: 98.5vw;
+    height: 120vh;
     position: relative;
-    right: 100px;
+    top: 100px;
+    right: 100px
 }
 
-.slide-container:nth-child(2) .slide {
-    background: url(images/iphone.jpg);
+.containerproje .slide-container:nth-child(2) .slide {
+    background: url(images/5G.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 98.5vw;
+    width: 98.5vw;
+    height: 120vh;
     position: relative;
-    right: 100px;
+    top: 100px;
+    right: 100px
 }
 
-.slide-container:nth-child(3) .slide {
-    background: url(images/pc.jpg);
+.containerproje .slide-container:nth-child(3) .slide {
+    background: url(images/mundo5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 98.5vw;
+    width: 98.5vw;
+    height: 120vh;
     position: relative;
-    right: 100px;
+    top: 100px;
+    right: 100px
 }
 
-.slide-container:nth-child(4) .slide {
-    background: url(images/tecnologia.jpg);
+.containerproje .slide-container:nth-child(4) .slide {
+    background: url(images/iphone-barato.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 98.5vw;
+    width: 98.5vw;
+    height: 120vh;
     position: relative;
-    right: 100px;
+    top: 100px;
+    right: 100px
+}
+
+.containerproje .slide-container:nth-child(5) .slide {
+    background: url(images/metaverso.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 98.5vw;
+    height: 120vh;
+    position: relative;
+    top: 100px;
+    right: 100px
 }
 
 .containerproje #prev,
 .containerproje #next {
     position: absolute;
-    top: 200%;
+    top: 60%;
     transform: translateY(-50%);
-    color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
+    color: #000000;
+    background: #ffffff;
     height: 50px;
     width: 50px;
     line-height: 50px;
@@ -380,8 +384,8 @@ header ul li a {
 
 .containerproje #prev:hover,
 .containerproje #next:hover {
-    background: rgb(0, 0, 0);
-    color: white;
+    background: #000000;
+    color: rgb(255, 255, 255);
 }
 
 .containerproje #prev {
@@ -390,4 +394,70 @@ header ul li a {
 
 .containerproje #next {
     right: 20px;
+}
+
+
+/* =============COMPARTILHE ESTÁ PÁGINA============= */
+
+.midiaS {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    top: -40px;
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+.midiaS a {
+    margin: 10px;
+    padding: 30px
+}
+
+.midiaS a i {
+    font-size: 1.6em;
+}
+
+
+/* =============FOOTER============= */
+
+footer {
+    width: 100%;
+    min-height: 250px;
+    background: #141414;
+    display: flex;
+}
+
+footer .boxs {
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+}
+
+.footer .boxs:nth-child(4) {
+    width: 400px;
+}
+
+.boxs h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.boxs ul li {
+    margin: 10px 0px;
+    list-style: none;
+}
+
+.boxs ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.boxs ul li a:hover {
+    color: #fff;
+}
+
+.boxs p {
+    color: #fff;
 }

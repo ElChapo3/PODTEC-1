@@ -23,6 +23,7 @@ function prev() {
 
 setInterval(next, 7000);
 
+
 //VIDEO
 
 const btns = document.querySelectorAll(".nav-btn");
