@@ -154,7 +154,7 @@ header ul li a {
 }
 
 .home .media-icons a:nth-child(1):hover {
-    color: #3b5998;
+    color: rgb(0, 153, 255);
 }
 
 .home .media-icons a:nth-child(2):hover {
@@ -166,7 +166,7 @@ header ul li a {
 }
 
 .home .media-icons a:nth-child(4):hover {
-    color: rgb(2, 163, 163);
+    color: rgb(2, 104, 163);
 }
 
 .home .media-icons a:hover {
