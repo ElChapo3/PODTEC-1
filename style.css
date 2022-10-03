@@ -45,7 +45,7 @@ header.sticky .logo {
 }
 
 header.sticky ul li a {
-    color: rgb(0, 217, 255);
+    color: #111111;
 }
 
 header ul {
@@ -62,8 +62,89 @@ header ul li a {
     position: relative;
     display: inline-block;
     margin: 0 15px;
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* =============HEADER-NOTICIA============= */
+
+.noticia-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: #3715fa70;
+}
+
+.noticia-header-2 {
+    background-color: #e4000083;
+}
+
+.noticia-header-3 {
+    background-color: #e46e0083;
+}
+
+.noticia-header-4 {
+    background-color: #209b8683;
+}
+
+.noticia-header-5 {
+    background-color: #9315a383;
+}
+
+.noticia-header.sticky {
+    backdrop-filter: blur(20px);
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px black;
+}
+
+.noticia-header .logo {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.noticia-header.sticky .logo {
+    color: rgb(0, 0, 0);
+}
+
+.noticia-header.sticky ul li a {
+    color: rgb(0, 0, 0);
+}
+
+.noticia-header ul {
+    position: relative;
+    display: flex;
+}
+
+.noticia-header ul li {
+    position: relative;
+    list-style: none;
+}
+
+.noticia-header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #111111;
+    text-decoration: none;
+}
+
+.noticia-header ul li a:hover {
+    color: #000000;
+    text-decoration: underline;
 }
 
 /* =============VIDEO============= */
@@ -162,10 +243,6 @@ header ul li a {
 }
 
 .home .media-icons a:nth-child(3):hover {
-    color: red;
-}
-
-.home .media-icons a:nth-child(4):hover {
     color: rgb(2, 104, 163);
 }
 
@@ -241,6 +318,8 @@ header ul li a {
 .heading h2 {
     font-weight: 600;
     font-size: 30px;
+    text-align: left;
+    color: #000000;
 }
 
 .content {
@@ -251,6 +330,7 @@ header ul li a {
 
 .contentBx {
     padding-right: 30px;
+    text-align: left;
 }
 
 .contentBx h3 {
@@ -258,8 +338,19 @@ header ul li a {
     margin-bottom: 5px;
 }
 
+.imgnot {
+    background: url(images/metaverso.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 98.5vw;
+    height: 80vh;
+    position: relative;
+    bottom: 100px;
+    right: 100px
+}
 
-/* =============CARROUSSEL============= */
+
+/* =============CAROUSEL============= */
 
 .containerproje {
     position: relative;
@@ -289,16 +380,30 @@ header ul li a {
 
 
 .containerproje .slide-container .slide .contentproje h3 {
-    font-size: 35px;
-    color: #ffffff;
+    background-color: rgba(221, 217, 217, 0.322);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.containerproje .slide-container .slide .contentproje h3:hover {
+    background-color: rgba(255, 255, 255, 0.911);
 }
 
 .containerproje .slide-container .slide .contentproje p {
-    font-size: 16px;
-    color: #ffffff;
+    background-color: rgba(221, 217, 217, 0.322);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
     width: 40%;
     height: 10%;
+}
 
+.containerproje .slide-container .slide .contentproje p:hover {
+    background-color: rgba(255, 255, 255, 0.911);
+}
+
+.containerproje .slide-container .slide .contentproje a {
+    text-decoration: none;
+    text-transform: none;
 }
 
 .containerproje .slide-container .slide .contentproje .bntproj {
@@ -310,6 +415,7 @@ header ul li a {
     padding: 9px 40px;
     border-radius: 5px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .containerproje .slide-container .slide .contentproje .bntproj:hover {
@@ -327,7 +433,7 @@ header ul li a {
 }
 
 .containerproje .slide-container:nth-child(1) .slide {
-    background: url(images/iphone13.png);
+    background: url(images/ImagesIndex/IndexIphone14.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 98.5vw;
@@ -338,7 +444,7 @@ header ul li a {
 }
 
 .containerproje .slide-container:nth-child(2) .slide {
-    background: url(images/5G.jpg);
+    background: url(images/ImagesIndex/Index5G.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 98.5vw;
@@ -349,7 +455,7 @@ header ul li a {
 }
 
 .containerproje .slide-container:nth-child(3) .slide {
-    background: url(images/mundo5.jpg);
+    background: url(images/ImagesIndex/Indexartemis.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 98.5vw;
@@ -360,7 +466,7 @@ header ul li a {
 }
 
 .containerproje .slide-container:nth-child(4) .slide {
-    background: url(images/iphone-barato.jpg);
+    background: url(images/ImagesIndex/Indexiphonebarato.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 98.5vw;
@@ -371,7 +477,7 @@ header ul li a {
 }
 
 .containerproje .slide-container:nth-child(5) .slide {
-    background: url(images/metaverso.png);
+    background: url(images/ImagesIndex/Indexmetaverso.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 98.5vw;
@@ -396,12 +502,14 @@ header ul li a {
     cursor: pointer;
     font-weight: bolder;
     border-radius: 50px;
+    transition: 0.3s;
 }
 
 .containerproje #prev:hover,
 .containerproje #next:hover {
     background: #000000;
     color: rgb(255, 255, 255);
+    box-shadow: 0 0 50px white;
 }
 
 .containerproje #prev {
@@ -423,6 +531,7 @@ header ul li a {
     bottom: 30px;
     padding: 30px;
     text-transform: uppercase;
+    color: #000000;
 }
 
 .midiaS a {
@@ -444,10 +553,6 @@ header ul li a {
 }
 
 .midiaS a:nth-child(5):hover {
-    color: red;
-}
-
-.midiaS a:nth-child(6):hover {
     color: rgb(2, 163, 163);
 }
 
@@ -495,33 +600,88 @@ footer .boxs {
     color: #fff;
 }
 
-/* --------RESPOSIVO --------------*/
 
-@media screen and (max-width: 400px) {
-    header {
-        width: 100%;
-    }
+/* =============NOTICIAS============= */
+.lula {
+    background-color: rgba(0, 108, 197, 0.3);
+    margin: 40px;
+    padding: 100px 100px;
+    position: relative;
+    top: 70px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.container-fluid {
+    color: #000000;
+}
+
+.texto-conteudo {
+    text-align: center;
+}
+
+.lula-2 {
+    background-color: rgba(197, 0, 0, 0.349);
+    margin: 40px;
+    padding: 100px 100px;
+    position: relative;
+    top: 70px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.lula-3 {
+    background: #e08a0863;
+    margin: 40px;
+    padding: 100px 100px;
+    position: relative;
+    top: 70px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.lula-4 {
+    background: #13b49949;
+    margin: 40px;
+    padding: 100px 100px;
+    position: relative;
+    top: 70px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.lula-5 {
+    background: #7e108d52;
+    margin: 40px;
+    padding: 100px 100px;
+    position: relative;
+    top: 70px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+/* =============CAROUSEL-NOTICIAS============= */
+
+.carousel-caption p {
+    background-color: rgba(221, 217, 217, 0.521);
+    color: rgb(0, 0, 0);
+}
+
+.carousel-caption p:hover {
+    background-color: rgba(255, 255, 255, 0.911);
+}
+
+.carousel-caption h5 {
+    background-color: rgba(221, 217, 217, 0.521);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.carousel-caption h5:hover {
+    background-color: rgba(255, 255, 255, 0.911);
+}
+
+.carousel-caption a {
+    text-decoration: none;
+    text-transform: none;
 
 }
 
-
-@media(max-width: 500px) {
-    .containerproje #prev {
-        left: 0px;
-        top: 60%;
-    }
-
-    .containerproje #next {
-        right: 0px;
-        top: 60%;
-    }
-
-
-    .containerproje .slide-container .slide .contentproje p {
-        font-size: 16px;
-        color: #ffffff;
-        width: 100%;
-
-    }
+.carousel-item img {
+    height: 500px;
 }
-
