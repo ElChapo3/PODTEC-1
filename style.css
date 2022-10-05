@@ -87,20 +87,8 @@ header ul li a:hover {
     background-color: #3715fa70;
 }
 
-.noticia-header-2 {
-    background-color: #e4000083;
-}
-
-.noticia-header-3 {
-    background-color: #e46e0083;
-}
-
-.noticia-header-4 {
-    background-color: #209b8683;
-}
-
-.noticia-header-5 {
-    background-color: #9315a383;
+.noticia-header:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.712);
 }
 
 .noticia-header.sticky {
@@ -138,12 +126,12 @@ header ul li a:hover {
     position: relative;
     display: inline-block;
     margin: 0 15px;
-    color: #111111;
+    color: #000000;
     text-decoration: none;
 }
 
 .noticia-header ul li a:hover {
-    color: #000000;
+    color: #ffffff;
     text-decoration: underline;
 }
 
@@ -207,6 +195,7 @@ header ul li a:hover {
     font-weight: 500;
     text-decoration: none;
     border-radius: 2px;
+    transition: 0.5s;
 }
 
 .home .content a:hover {
@@ -304,6 +293,54 @@ header ul li a:hover {
     transition-property: clip-path;
 }
 
+/* =============TECNOLOGIA============= */
+.tecnologia {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tecnologia .tecno {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+
+.tecnologia .tecno .hidden {
+    padding-left: 30px;
+    text-align: right;
+    position: relative;
+    left: 400px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.tecnologia .tecno .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.tecnologia .tecno .hidden h2 {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: right;
+    color: #000000;
+}
+
+.tecnologia .tecno .img-tecno {
+    position: relative;
+    right: 800px;
+    bottom: 30px;
+}
 
 
 /* =============HEADING============= */
@@ -312,7 +349,6 @@ header ul li a:hover {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-
 }
 
 .heading h2 {
@@ -336,6 +372,25 @@ header ul li a:hover {
 .contentBx h3 {
     font-size: 24px;
     margin-bottom: 5px;
+}
+
+.heading .content .hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(-100%);
+    transition: all 2s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.heading .content .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
 
 .imgnot {
@@ -617,42 +672,6 @@ footer .boxs {
 
 .texto-conteudo {
     text-align: center;
-}
-
-.lula-2 {
-    background-color: rgba(197, 0, 0, 0.349);
-    margin: 40px;
-    padding: 100px 100px;
-    position: relative;
-    top: 70px;
-    box-shadow: 5px 5px 5px 5px black;
-}
-
-.lula-3 {
-    background: #e08a0863;
-    margin: 40px;
-    padding: 100px 100px;
-    position: relative;
-    top: 70px;
-    box-shadow: 5px 5px 5px 5px black;
-}
-
-.lula-4 {
-    background: #13b49949;
-    margin: 40px;
-    padding: 100px 100px;
-    position: relative;
-    top: 70px;
-    box-shadow: 5px 5px 5px 5px black;
-}
-
-.lula-5 {
-    background: #7e108d52;
-    margin: 40px;
-    padding: 100px 100px;
-    position: relative;
-    top: 70px;
-    box-shadow: 5px 5px 5px 5px black;
 }
 
 /* =============CAROUSEL-NOTICIAS============= */
